@@ -1,0 +1,14 @@
+{
+  "name": "github-actions-bolt-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bolt": {
+    "workspaces": [
+      "packages/*"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.9.0"
+  }
+}
