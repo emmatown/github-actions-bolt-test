@@ -8,6 +8,9 @@
       "packages/*"
     ]
   },
+  "scripts": {
+    "postinstall": "node thing.js"
+  },
   "dependencies": {
     "react": "^16.8.0"
   }
