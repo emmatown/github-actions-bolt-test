@@ -15,7 +15,8 @@
   "dependencies": {
     "chalk-cli": "^4.1.0",
     "is-ci": "^2.0.0",
-    "react": "^16.9.0"
+    "react": "^16.8.0",
+    "terminal-link-cli": "^2.0.0"
   },
   "preconstruct": {
     "packages": [
