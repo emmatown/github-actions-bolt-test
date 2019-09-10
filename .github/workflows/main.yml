@@ -15,5 +15,8 @@ jobs:
         with:
           version: 10.x
 
+      - name: Install bolt
+        run: npm i -g bolt
+
       - name: Install Dependencies
-        run: CI=true npm i
+        run: CI=true bolt
