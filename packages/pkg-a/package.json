@@ -1,7 +1,7 @@
 {
   "name": "pkg-a",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/pkg-a.cjs.js",
   "license": "MIT",
   "dependencies": {
     "react": "^16.8.0"
