@@ -1,10 +1,13 @@
-name: Test Workflow
+name: Release
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  test:
-    name: Test Workflow
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -15,8 +18,8 @@ jobs:
         with:
           version: 10.x
 
-      - name: Install bolt
-        run: npm i -g bolt
+      - name: Install Bolt
+        run: npm install --global bolt
 
       - name: Install Dependencies
         run: CI=true bolt

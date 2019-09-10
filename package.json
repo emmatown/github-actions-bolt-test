@@ -10,11 +10,12 @@
   },
   "scripts": {
     "contributing-guide": "is-ci && exit 0 || chalk -t \"{bold 📝 Contributing to KeystoneJS?}\" && link \"🔗 Read the full Contributing Guide\" \"https://github.com/keystonejs/keystone-5/blob/master/CONTRIBUTING.md\"",
-    "postinstall": "yarn contributing-guide"
+    "postinstall": "yarn run --silent contributing-guide"
   },
   "dependencies": {
     "chalk-cli": "^4.1.0",
-    "is-ci": "^2.0.0"
+    "is-ci": "^2.0.0",
+    "react": "^16.9.0"
   },
   "preconstruct": {
     "packages": [
