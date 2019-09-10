@@ -16,4 +16,4 @@ jobs:
           version: 10.x
 
       - name: Install Dependencies
-        run: npm i
+        run: CI=true npm i
