@@ -9,13 +9,19 @@
     ]
   },
   "scripts": {
-    "postinstall": "preconstruct dev"
+    "postinstall": "preconstruct dev && build-field-types dev"
   },
   "dependencies": {
+    "@keystone-alpha/build-field-types": "^1.0.5",
     "preconstruct": "^0.1.1",
     "react": "^16.8.0"
   },
   "preconstruct": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "field-types": {
     "packages": [
       "packages/*"
     ]
