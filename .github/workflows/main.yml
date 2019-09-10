@@ -15,8 +15,5 @@ jobs:
         with:
           version: 10.x
 
-      - name: Install Bolt
-        run: npm install --global bolt
-
       - name: Install Dependencies
-        run: bolt
+        run: npm i

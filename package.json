@@ -9,16 +9,10 @@
     ]
   },
   "scripts": {
-    "postinstall": "babel some-file.js --out-file=other.js && rimraf other.js && preconstruct dev && build-field-types dev"
+    "postinstall": "chalk -t \"{bold 📝 Contributing to KeystoneJS?}\" && link \"🔗 Read the full Contributing Guide\" \"https://github.com/keystonejs/keystone-5/blob/master/CONTRIBUTING.md\""
   },
   "dependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "@keystone-alpha/build-field-types": "^1.0.5",
-    "preconstruct": "^0.1.1",
-    "react": "^16.8.0",
-    "rimraf": "^3.0.0"
+    "chalk-cli": "^4.1.0"
   },
   "preconstruct": {
     "packages": [
